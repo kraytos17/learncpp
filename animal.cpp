@@ -20,8 +20,8 @@ namespace Animal {
     };
 
     constexpr std::array animals{
-            Data{"chicken", 2, "cluck"},  Data{"dog", 4, "woof"},   Data{"cat", 4, "meow"},
-            Data{"elephant", 4, "pawoo"}, Data{"duck", 2, "quack"}, Data{"snake", 0, "hiss"},
+        Data{"chicken", 2, "cluck"},  Data{"dog", 4, "woof"},   Data{"cat", 4, "meow"},
+        Data{"elephant", 4, "pawoo"}, Data{"duck", 2, "quack"}, Data{"snake", 0, "hiss"},
     };
 
     constexpr std::array types{chicken, dog, cat, elephant, duck, snake};

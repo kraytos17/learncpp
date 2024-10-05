@@ -23,7 +23,7 @@ constexpr std::string_view getColorName(const Color color) {
 // Teach operator<< how to print a Color
 // std::ostream is the type of std::cout, std::cerr, etc...
 // The return type and parameter type are references (to prevent copies from being made)
-std::ostream &operator<<(std::ostream &out, const Color color) {
+std::ostream& operator<<(std::ostream& out, const Color color) {
     out << getColorName(color); // print our color's name to whatever output stream out
     return out; // operator<< conventionally returns its left operand
 

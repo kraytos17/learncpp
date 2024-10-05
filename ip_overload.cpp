@@ -40,7 +40,7 @@ constexpr std::optional<Pet> getPetFromString(const std::string_view sv) {
 }
 
 // pet is an in/out parameter
-std::istream &operator>>(std::istream &in, Pet &pet) {
+std::istream& operator>>(std::istream& in, Pet& pet) {
     std::string s{};
     in >> s; // get input string from user
 

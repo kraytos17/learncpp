@@ -20,4 +20,6 @@ add_executable(learn
         monster.cpp
         hangman.cpp
         animal.cpp
+        potion.cpp
+        sort.cpp
 )
