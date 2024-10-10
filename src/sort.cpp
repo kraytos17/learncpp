@@ -18,7 +18,7 @@ void unoptimized() {
     std::cout << '\n';
 }
 
-// optimized
+// optimized sort
 void optimized() {
     int array[]{6, 3, 2, 9, 7, 1, 5, 4, 8};
     constexpr int len = static_cast<int>(std::ssize(array));

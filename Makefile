@@ -1,12 +1,14 @@
 # Compiler
 CXX := g++
 
-CXXFLAGS := -std=c++20 -fdiagnostics-color=always -g -ggdb \
-            -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror
+CXXFLAGS := -std=c++20 -fdiagnostics-color=always -g -ggdb -pedantic \
+            -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror -Wpedantic
 
-# Default source file
-SRC := main.cpp
+# Default source directory and files
+SRCDIR := src
+SRC := $(wildcard $(SRCDIR)/*.cpp)
 
+# Output file name
 OUT := $(basename $(SRC))
 
 .PHONY: run
@@ -19,7 +21,3 @@ $(OUT): $(SRC)
 .PHONY: clean
 clean:
 	rm -f $(OUT)
-
-ifeq ($(SRC),)
-SRC := main.cpp
-endif

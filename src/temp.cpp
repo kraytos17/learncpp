@@ -1,7 +1,7 @@
 #include <array>
 #include <iostream>
 
-void printLength(const std::array<int, 5>& arr) {
+void printLength([[maybe_unused]]const std::array<int, 5>& arr) {
     //constexpr int length{std::size(arr)}; // weird conversion error / compile error
     //std::cout << "length: " << length << '\n';
     [[maybe_unused]] constexpr int narrowing = 5UL; // unsigned long -> int but constexpr so no narrowing warning
